@@ -1,0 +1,9 @@
+[Unit]
+Description=NFC scanner service
+
+[Service]
+ExecStart=/home/pi/bin/nfc_reader/main.py
+Restart=always
+
+[Install]
+WantedBy=default.target
