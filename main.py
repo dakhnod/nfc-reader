@@ -1,3 +1,5 @@
+#!venv/bin/python3
+
 import paho.mqtt.client
 import serial as ser
 import time
@@ -11,6 +13,7 @@ def main():
     print('connecting to mqtt')
     mqtt.connect('home')
     print('connected to mqtt')
+    mqtt.loop_start()
 
     port = ser.Serial()
     port.port = '/dev/ttyUSB0'
