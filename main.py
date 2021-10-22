@@ -1,4 +1,4 @@
-#!venv/bin/python3
+#!venv/bin/python3 -u
 
 import paho.mqtt.client
 import serial as ser

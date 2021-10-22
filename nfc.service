@@ -3,6 +3,7 @@ Description=NFC scanner service
 
 [Service]
 ExecStart=/home/pi/bin/nfc_reader/main.py
+WorkingDirectory=/home/pi/bin/nfc_reader
 Restart=always
 
 [Install]
